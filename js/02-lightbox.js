@@ -16,6 +16,7 @@ function CreateMarkup(galleryItems) {
 function SetToGallery(gallery) {
   ulEl.innerHTML = gallery;
 }
+
 let lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
   captionsData: "alt",
