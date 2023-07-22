@@ -2,9 +2,9 @@ import { galleryItems } from "./gallery-items.js";
 
 const ulEl = document.querySelector(".gallery");
 
-SetToGallery(CreateMarkup(galleryItems));
+setToGallery(createMarkup(galleryItems));
 
-function CreateMarkup(galleryItems) {
+function createMarkup(galleryItems) {
   return galleryItems
     .map(
       ({ preview, original, description }) =>
@@ -13,10 +13,9 @@ function CreateMarkup(galleryItems) {
     .join("");
 }
 
-function SetToGallery(gallery) {
+function setToGallery(gallery) {
   ulEl.innerHTML = gallery;
 }
-
 let lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
   captionsData: "alt",

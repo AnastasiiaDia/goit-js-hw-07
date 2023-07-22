@@ -3,9 +3,9 @@ const ulEl = document.querySelector(".gallery");
 
 ulEl.addEventListener("click", onClick);
 
-SetToGallery(CreateMarkup(galleryItems));
+setToGallery(createMarkup(galleryItems));
 
-function CreateMarkup(galleryItems) {
+function createMarkup(galleryItems) {
   return galleryItems
     .map(
       ({ preview, original, description }) =>
@@ -14,7 +14,7 @@ function CreateMarkup(galleryItems) {
     .join("");
 }
 
-function SetToGallery(markup) {
+function setToGallery(markup) {
   ulEl.insertAdjacentHTML("beforeend", markup);
 }
 
